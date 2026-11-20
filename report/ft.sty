@@ -1,0 +1,16 @@
+% Future Toolkit house style. Load after \documentclass[conference,a4paper,10pt]{IEEEtran}.
+\ProvidesPackage{ft}
+\RequirePackage[T1]{fontenc}
+\RequirePackage[scaled=.95]{helvet}
+\renewcommand\rmdefault{phv}\renewcommand\ttdefault{phv}\renewcommand\familydefault{\sfdefault} % Helvetica everywhere
+\RequirePackage[helvet]{sfmath}                                       % sans maths to match
+\RequirePackage[a4paper,margin=17mm,columnsep=6mm]{geometry} % even margins, full A4 used
+\RequirePackage{graphicx,microtype}
+\graphicspath{{figures/}}
+\pagestyle{empty}
+% The one figure element: \ftfig{file}{caption}, single column, vector PDF
+\newcommand\ftfig[2]{\begin{figure}[t]\centering\includegraphics[width=\columnwidth]{#1}\caption{#2}\label{fig}\end{figure}}
+% Discussion pages (onecolumn): \ftcols{c} then \ftpanel{file}{caption}, separated by \hfill (same row) or \par\vfill (new row)
+\newcommand\ftcols[1]{\def\ft@cols{#1}\centering}
+\newcommand\ftpanel[2]{\begin{minipage}[t]{\dimexpr\linewidth/\ft@cols-3mm}\centering\includegraphics{#1}\par\smallskip
+  \refstepcounter{figure}\footnotesize\textsc{Fig.~\thefigure.}~#2\end{minipage}}
