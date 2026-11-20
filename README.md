@@ -76,3 +76,14 @@ IPEO-Project/
 │
 ├── checkpoints/               # gitignored
 └── report/                    # LaTeX or markdown, final figures
+## Data
+
+The data is not in git (`data/` is gitignored). To download it into `data/raw/` (~2.3 GB):
+
+```bash
+python scripts/download_data.py              # both datasets
+python scripts/download_data.py --only npy   # only the preprocessed tiles (seas_npy)
+```
+
+- `data/raw/seasfire_1deg_subset.zarr`: full SeasFire cube, 1° grid, 8-day steps
+- `data/raw/seas_npy`: preprocessed 20×20 tiles split into train/val/test, plus `countries.geojson`
