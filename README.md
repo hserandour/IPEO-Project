@@ -1,4 +1,4 @@
-wildfire-forecast/
+IPEO-Project/
 ├── README.md                  # goal, setup, how to reproduce each experiment
 ├── environment.yml            # or pyproject.toml / requirements.txt
 ├── .gitignore
