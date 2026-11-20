@@ -1,0 +1,240 @@
+{
+ "start": "2026-11-20",
+ "end": "2027-01-09",
+ "today": "2026-11-20",
+ "header": "SeasFire spatial shift \u00b7 A = Martin, B = Herve",
+ "periods": [
+  [
+   "2026-11-27",
+   "2026-11-27",
+   "Midterm"
+  ],
+  [
+   "2026-12-24",
+   "2027-01-01",
+   "Holidays"
+  ]
+ ],
+ "groups": [
+  {
+   "name": "Milestones",
+   "milestones": [
+    [
+     "2026-11-26",
+     "M1",
+     "Milestone"
+    ],
+    [
+     "2026-12-04",
+     "M2",
+     "Milestone"
+    ],
+    [
+     "2026-12-11",
+     "M3",
+     "Milestone"
+    ],
+    [
+     "2026-12-18",
+     "M4",
+     "Milestone"
+    ],
+    [
+     "2026-12-23",
+     "M5",
+     "Milestone"
+    ],
+    [
+     "2027-01-06",
+     "M6",
+     "Milestone"
+    ],
+    [
+     "2027-01-08",
+     "M7",
+     "Deadline"
+    ]
+   ]
+  },
+  {
+   "name": "Setup",
+   "tasks": [
+    {
+     "name": "0.1 Confirm scope & team with TAs (A+B)",
+     "start": "2026-11-20",
+     "end": "2026-11-22"
+    },
+    {
+     "name": "0.2 Repo, env, compute (B)",
+     "start": "2026-11-20",
+     "end": "2026-11-24"
+    }
+   ]
+  },
+  {
+   "name": "Data pipeline",
+   "tasks": [
+    {
+     "name": "1.1 Download cube & mask (A)",
+     "start": "2026-11-20",
+     "end": "2026-11-23"
+    },
+    {
+     "name": "1.2 Exploratory analysis (A)",
+     "start": "2026-11-22",
+     "end": "2026-11-27"
+    },
+    {
+     "name": "1.3 Preprocessing (A)",
+     "start": "2026-11-24",
+     "end": "2026-11-30"
+    },
+    {
+     "name": "1.4 Patches & dataloaders (A)",
+     "start": "2026-11-28",
+     "end": "2026-12-04"
+    }
+   ]
+  },
+  {
+   "name": "Models & training",
+   "tasks": [
+    {
+     "name": "2.1 Literature review (B)",
+     "start": "2026-11-20",
+     "end": "2026-11-29"
+    },
+    {
+     "name": "2.2 Pixel-wise baseline (B)",
+     "start": "2026-11-26",
+     "end": "2026-12-02"
+    },
+    {
+     "name": "2.3 U-Net & imbalance loss (B)",
+     "start": "2026-11-29",
+     "end": "2026-12-08"
+    },
+    {
+     "name": "2.4 E0 all regions (B)",
+     "start": "2026-12-04",
+     "end": "2026-12-11"
+    }
+   ]
+  },
+  {
+   "name": "Evaluation",
+   "tasks": [
+    {
+     "name": "3.1 Metrics per region (A)",
+     "start": "2026-12-01",
+     "end": "2026-12-07"
+    },
+    {
+     "name": "3.2 Maps, PR curves, timing (A)",
+     "start": "2026-12-06",
+     "end": "2026-12-13"
+    }
+   ]
+  },
+  {
+   "name": "Spatial experiments",
+   "tasks": [
+    {
+     "name": "4.1 E1 without Africa (A)",
+     "start": "2026-12-08",
+     "end": "2026-12-15"
+    },
+    {
+     "name": "4.2 E2 random removal, 3 seeds (A)",
+     "start": "2026-12-10",
+     "end": "2026-12-18"
+    },
+    {
+     "name": "4.3 E3 balanced training (B)",
+     "start": "2026-12-11",
+     "end": "2026-12-21"
+    },
+    {
+     "name": "4.4 Consolidate & freeze (A+B)",
+     "start": "2026-12-18",
+     "end": "2026-12-22"
+    }
+   ]
+  },
+  {
+   "name": "Temporal bonus",
+   "tasks": [
+    {
+     "name": "5.1 Year selection, stretch (A)",
+     "start": "2026-12-18",
+     "end": "2026-12-24"
+    }
+   ]
+  },
+  {
+   "name": "Report",
+   "tasks": [
+    {
+     "name": "6.1 Template & outline (A)",
+     "start": "2026-12-11",
+     "end": "2026-12-14"
+    },
+    {
+     "name": "6.2 Intro & literature (B)",
+     "start": "2026-12-14",
+     "end": "2026-12-21"
+    },
+    {
+     "name": "6.3 Data & methods (A)",
+     "start": "2026-12-14",
+     "end": "2026-12-22"
+    },
+    {
+     "name": "6.4 Results (A)",
+     "start": "2026-12-21",
+     "end": "2026-12-28"
+    },
+    {
+     "name": "6.5 Discussion (B)",
+     "start": "2026-12-22",
+     "end": "2026-12-31"
+    },
+    {
+     "name": "6.6 Review, cut to 10 p (A+B)",
+     "start": "2027-01-02",
+     "end": "2027-01-07"
+    }
+   ]
+  },
+  {
+   "name": "Code & submission",
+   "tasks": [
+    {
+     "name": "7.1 Clean code & README (B)",
+     "start": "2026-12-28",
+     "end": "2027-01-06"
+    },
+    {
+     "name": "7.2 Fresh-env reproduction (A)",
+     "start": "2027-01-04",
+     "end": "2027-01-07"
+    },
+    {
+     "name": "7.3 Submit on Moodle (A+B)",
+     "start": "2027-01-07",
+     "end": "2027-01-09"
+    }
+   ]
+  }
+ ],
+ "categories": {
+  "Milestone": [
+   "D",
+   "0.75"
+  ],
+  "Deadline": [
+   "D",
+   "k"
+  ]
+ }
+}
